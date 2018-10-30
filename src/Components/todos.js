@@ -4,6 +4,7 @@ import { completeTodo } from '../Actions';
 
 const style = { textDecoration: 'line-through' };
 
+
 const Todos = props => {
   return(
     <div>
