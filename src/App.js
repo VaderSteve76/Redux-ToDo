@@ -42,4 +42,11 @@ class App extends Component {
   }
 }
 
-export default App;
+const mapStateToProps = state => {
+  return {
+    todos: state.todos,
+    name: state.name
+  };
+};
+
+export default connect(mapStateToProps, { addTodo })(App);

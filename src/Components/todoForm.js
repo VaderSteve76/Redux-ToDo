@@ -8,7 +8,7 @@ const TodoForm = props => {
         placeHolder='Add ToDo'
         name='todoText'
         value={props.todoText}
-        onChange={this.changeHandler}
+        onChange={props.changeHandler}
       />
       <button onClick={props.addTodo}>Add ToDo</button>
     </div>
